@@ -1,0 +1,54 @@
+*{
+	border-radius: 0px!important;
+}
+
+body{
+	border-top: 2px solid #E3E006!important;
+}
+
+.card{
+	border: 0px!important;
+	box-shadow: 0px 2px 2px 1px!important;
+}
+
+.fa-refresh{
+	cursor: pointer;
+	transition: 0.1s ease-in-out;
+	transform: rotateZ(0deg);
+}
+
+.fa-refresh:hover{
+	transition: 0.2s ease-in-out;
+	transform: rotateZ(180deg);
+}
+
+#loader{
+	top: 45%;
+	left: 50%;
+	position: absolute;
+	z-index: 1;
+	transform: translate(-50%,-50%);
+}
+
+th{
+	cursor: pointer;
+}
+
+.fa-sort:hover{
+	transform: scale(1.1);
+}
+
+.prev.active,.next.active{
+	cursor: pointer!important;
+	color: black!important;
+}
+
+.prev.active:hover,.next.active:hover{
+	color: green!important;
+}
+
+.prev,.next{
+	background-color: transparent!important;
+	border: 0px!important;
+	cursor: disabled!important;
+}

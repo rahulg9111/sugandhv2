@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Sugandh</title>
+</head>
+<body>
+	
+	<div id="loader" class="fa fa-spinner fa-spin fa-3x"></div>
+
+	<div class="container mt-5">
+		<div class="col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-10 offset-1">
+			<p class="text-center my-3 font-weight-bold" id="totalCount"></p>
+			<table class="text-center table-sm table table-response table-striped table-bordered table-hover">
+				<thead>
+					<tr>
+						<th id="word">Word <i class="fa fa-sort float-right"></i></th>
+						<th id="location">Location (%) <i class="fa fa-sort float-right"></i></th>
+						<th id="date">Date <i class="fa fa-sort float-right"></i></th>
+						<th id="timestamp">Timestamp  <i class="fa fa-sort float-right"></i></th>
+					</tr>
+				</thead>
+				<tbody id="tableBody"></tbody>
+			</table>
+			<div id="pagination" class="text-center mt-4">
+				<button class="mr-2 prev" id="prevPag" type="button" onclick="prevPaginate(event)">
+					<a class="fa fa-angle-double-left"></a> 
+					Prev
+				</button>
+				<span class="mx-3 text-muted">
+					<span id="currentPage" class="mx-1">1</span>of
+					<span id="nextPage" class="mx-1">-</span>
+				</span>
+				<button class="next" id="nextPag" type="button" onclick="paginate(event)">
+					Next 
+					<a class="fa fa-angle-double-right"></a>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+    <script src="./js/webSock.js"></script>
+</body>
+</html>
